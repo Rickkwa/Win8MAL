@@ -271,6 +271,17 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 .hide {
 	margin-left: 50px;
 	padding: 15px;
+	animation: 1s fadeIn;
+	-webkit-animation: 1s fadeIn;
+}
+
+@keyframes fadeIn {
+	from {opacity: 0.1;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+	from {opacity: 0.1;}
+	to {opacity: 1;}
 }
 
 /* The table cell inside the div */
@@ -396,6 +407,11 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 /* The box that pops up when you press Edit */
 #fancybox-wrap {
 	background-color: #0072C6!important;
+}
+
+#fancybox-wrap, #fancybox-outer{
+	animation: 0.5s fadeIn;
+	-webkit-animation: 0.5s fadeIn;
 }
 
 .fancy-bg {

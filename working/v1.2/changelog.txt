@@ -4,6 +4,7 @@ May 22, 2013
 - both row's tiles are aligned with each other (before, there was 1px offset for the left division)
 	- increased the width of list_surround and the controlbar to 1008px
 	- set the td and <a> of the filter tiles to 160px
+- used css3 transitions for fading in the MORE and EDIT box
 
 
 
