@@ -26,18 +26,20 @@ a:visited, a:link, a:active {
 
 
 #list_surround {
-	width: 1000px;
+	width: 1008px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 /* The Currently Watching, Completed, etc buttons on the top to filter */
 .status_not_selected, .status_selected {
-	width: 16%;
+	/* width: 16.66%; */
 	/* width: 160px; */
 	background-color: #0072C6;
 	height: 80px;
 	line-height: 80px;
+	border: 0!important;
+	border-width: 0!important;
 	border-right: 8px solid white!important;
 }
 
@@ -45,6 +47,13 @@ a:visited, a:link, a:active {
 .status_selected a:visited, .status_selected a:link, .status_selected a:active {
 	color: white;
 	display: block; /* Makes the entire block clickable rather than just words */
+	/* width: 160px; */
+}
+
+.status_not_selected a:visited, .status_not_selected a:link,.status_not_selected a:active, 
+.status_selected a:visited, .status_selected a:link, .status_selected a:active,
+.status_not_selected, .status_selected {
+	width: 160px;
 }
 
 
@@ -299,11 +308,12 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	background-image: none!important;
 	background-color: #005C7A!important;
 	height: 80px!important;
-	width: 1000px!important;
+	width: 1008px!important;
 	margin-left: auto!important;
 	margin-right: auto!important;
 	margin-bottom: -12px!important;
 	margin-top: 10px!important;
+	border: 0!important;
 }
 
 /* Links on it */
@@ -314,10 +324,11 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* The three sections (table cells) ie: username/logout, add to list/home/anime(manga)list, history, forum, export */
 #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
+	border: 0!important;
 	border-right: 8px solid white!important;
 	/* width: 33%!important; */
 	/* width: 328px! important; */
-	width: 33.33% !important;
+	width: 33.333% !important;
 }
 
 /* Profile/logout section */
