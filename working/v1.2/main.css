@@ -63,11 +63,16 @@ use .header_cw, .header_completed, etc for the table that it is in */
 
 
 /* All the links that appear in the Anime Title, Score, Type, Progress, etc row */
+table .table_header,
 table .table_header .table_headerLink,
 table .table_header .table_headerLink:link,
 table .table_header .table_headerLink:visited,
 table .table_header .table_headerLink:active {
 	color: white;
+}
+
+table .table_header b {
+	font-weight: normal;
 }
 
 
