@@ -33,13 +33,9 @@ a:visited, a:link, a:active {
 
 /* The Currently Watching, Completed, etc buttons on the top to filter */
 .status_not_selected, .status_selected {
-	/* width: 16.66%; */
-	/* width: 160px; */
 	background-color: #0072C6;
 	height: 80px;
 	line-height: 80px;
-	border: 0!important;
-	border-width: 0!important;
 	border-right: 8px solid white!important;
 }
 
@@ -47,7 +43,6 @@ a:visited, a:link, a:active {
 .status_selected a:visited, .status_selected a:link, .status_selected a:active {
 	color: white;
 	display: block; /* Makes the entire block clickable rather than just words */
-	/* width: 160px; */
 }
 
 .status_not_selected a:visited, .status_not_selected a:link,.status_not_selected a:active, 
@@ -68,13 +63,10 @@ use .header_cw, .header_completed, etc for the table that it is in */
 
 
 /* All the links that appear in the Anime Title, Score, Type, Progress, etc row */
-.header_cw + table .table_header .table_headerLink,
-.header_completed + table .table_header .table_headerLink,
-.header_onhold + table .table_header .table_headerLink, 
-.header_dropped + table .table_header .table_headerLink, 
-.header_ptw + table .table_header .table_headerLink,
-.table_headerLink,
-.table_header strong {
+table .table_header .table_headerLink,
+table .table_header .table_headerLink:link,
+table .table_header .table_headerLink:visited,
+table .table_header .table_headerLink:active {
 	color: white;
 }
 
@@ -82,7 +74,7 @@ use .header_cw, .header_completed, etc for the table that it is in */
 /* Background colour for the top tile, the list header, and the MORE */
 .header_cw  + table .table_header,
 #list_surround br:first-child + table tr td:nth-child(1),
-.header_cw ~ .hide, .header_cw ~ .hide .borderRBL  {
+.header_cw ~ .hide  {
 	background-color: #0072C6; /* blue */
 }
 
@@ -103,7 +95,7 @@ this block make mouseover slow */
 
 .header_completed  + table .table_header,
 #list_surround br:first-child + table tr td:nth-child(2),
-.header_completed ~ .hide, .header_completed ~ .hide .borderRBL {
+.header_completed ~ .hide {
 	background-color: #5E34BA;
 }
 
@@ -124,7 +116,7 @@ this block make mouseover slow */
 
 .header_onhold  + table .table_header,
 #list_surround br:first-child + table tr td:nth-child(3),
-.header_onhold ~ .hide, .header_onhold ~ .hide .borderRBL  {
+.header_onhold ~ .hide  {
 	background-color: #DF5628;
 }
 
@@ -145,7 +137,7 @@ this block make mouseover slow */
 
 .header_dropped  + table .table_header,
 #list_surround br:first-child + table tr td:nth-child(4),
-.header_dropped ~ .hide, .header_dropped ~ .hide .borderRBL  {
+.header_dropped ~ .hide  {
 	background-color: #009CAD;
 }
 
@@ -163,7 +155,7 @@ this block make mouseover slow */
 
 .header_ptw  + table .table_header,
 #list_surround br:first-child + table tr td:nth-child(5),
-.header_ptw ~ .hide, .header_ptw ~ .hide .borderRBL  {
+.header_ptw ~ .hide {
 	background-color: #AB234B;
 }
 
@@ -181,7 +173,6 @@ this block make mouseover slow */
 
 #list_surround br:first-child + table tr td:nth-child(6) {
 	background-color: #079B00;
-	/* border-right: 0px !important; */
 }
 
 #list_surround br:first-child + table tr td:nth-child(6):hover {
@@ -196,7 +187,7 @@ this block make mouseover slow */
 
 /* The cells of the Anime Title, Score, Type, etc */
 .table_header {
-	background-color: #0072C6;
+	/* background-color: #0072C6; */
 	padding: 8px 0;
 }
 
@@ -214,7 +205,7 @@ this block make mouseover slow */
 
 /* All the columns on the ODD numbered rows */ 
 .td1 {
-	background-color: white;
+	/* background-color: white; */
 }
 
 /* All the cells in the lists */
@@ -238,20 +229,29 @@ tr .td1:nth-child(2) small a, tr .td2:nth-child(2) small a {
 
 
 /* The Edit, More links and the dash (-) in between them */
-tr .td1:nth-child(2) small, tr .td2:nth-child(2) small, 
+/* tr .td1:nth-child(2) small, tr .td2:nth-child(2) small, 
 tr .td1:nth-child(2) small a, tr .td2:nth-child(2) small a {
+	color: transparent;
+} */
+tr .td1 > div > small, tr .td2 > div > small, 
+tr .td1 > div > small a:link, tr .td1 > div > small a:active, tr .td1 > div > small a:visited,
+tr .td2 > div > small a:link, tr .td2 > div > small a:active, tr .td2 > div > small a:visited {
 	color: transparent;
 }
 
 /* Edit button */
-tr .td1:nth-child(2) small a:first-child, tr .td2:nth-child(2) small a:first-child {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/edit_20.png) no-repeat center center; */
+/* tr .td1:nth-child(2) small a:first-child, tr .td2:nth-child(2) small a:first-child {
+	background: url(edit_20.png) no-repeat center center;
+} */
+tr .td1 > div > small a:first-child, tr .td2 > div > small a:first-child {
 	background: url(edit_20.png) no-repeat center center;
 }
 
 /* More button */
-tr .td1:nth-child(2) small a:last-child, tr .td2:nth-child(2) small a:last-child {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/more_20.png) no-repeat center center; */
+/* tr .td1:nth-child(2) small a:last-child, tr .td2:nth-child(2) small a:last-child {
+	background: url(more_20.png) no-repeat center center;
+} */
+tr .td1 > div > small a:last-child, tr .td2 > div > small a:last-child {
 	background: url(more_20.png) no-repeat center center;
 }
 
@@ -284,8 +284,8 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 	to {opacity: 1;}
 }
 
-/* The table cell inside the div */
-.borderRBL {
+.hide .borderRBL {
+	background-color: transparent;
 }
 
 .hide, .borderRBL > div a {
@@ -315,7 +315,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* ============================= The top strip above everything */
 #mal_control_strip {
-	/* width: 300px!important; */
 	background-image: none!important;
 	background-color: #005C7A!important;
 	height: 80px!important;
@@ -330,35 +329,28 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 /* Links on it */
 #mal_control_strip a:link, #mal_control_strip a:visited, #mal_control_strip a:active {
 	text-decoration: none!important;
-	/* padding: 5px!important; */
 }
 
 /* The three sections (table cells) ie: username/logout, add to list/home/anime(manga)list, history, forum, export */
 #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
 	border: 0!important;
 	border-right: 8px solid white!important;
-	/* width: 33%!important; */
-	/* width: 328px! important; */
 	width: 33.333% !important;
 }
 
 /* Profile/logout section */
 #mal_cs_listinfo {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/listinfo_icon.png) no-repeat 260px center; */
 	background: url(listinfo_icon.png) no-repeat 260px center;
 }
 
 /* Add to list, Home, Animelist, Mangalist section */
 #mal_cs_links {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/links_icon.png) no-repeat 260px center; */
 	background: url(links_icon.png) no-repeat 260px center;
 }
 
 /* History, Forum, Export section */
 #mal_cs_otherlinks {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/otherlinks_icon.png) no-repeat 260px center; */
 	background: url(otherlinks_icon.png) no-repeat 260px center;
-	/* border-right: 0px !important; */
 }
 
 /* The divs in history, forum, export section */
@@ -377,7 +369,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #mal_cs_pic + #mal_cs_otherlinks {
-	/* background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1.1/otherlinks_icon.png) no-repeat 420px center; */
 	background: url(otherlinks_icon.png) no-repeat 420px center;
 }
 
@@ -419,5 +410,5 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #fancybox-close {
-	background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1/exit.png) top left no-repeat!important;
+	background: url(exit.png) top left no-repeat!important;
 }
