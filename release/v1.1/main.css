@@ -392,5 +392,5 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #fancybox-close {
-	background: url(https://dl.dropboxusercontent.com/u/48009541/MAL_CSS/win8/release/v1/exit.png) top left no-repeat!important;
+	background: url(exit.png) top left no-repeat!important;
 }
