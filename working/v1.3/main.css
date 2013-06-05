@@ -1,7 +1,7 @@
 /**
 * Windows 8 Style MyAnimeList
 * Created by Ricky K
-* Version 1
+* Version 1.3
 
 Colours:
 # 0072C6 - blue
@@ -84,7 +84,6 @@ table .table_header b {
 }
 
 #list_surround br:first-child + table tr td:nth-child(1):hover {
-	background-color: #0089C8;
 	background-color: #0061C8;
 }
 
@@ -105,7 +104,6 @@ this block make mouseover slow */
 }
 
 #list_surround br:first-child + table tr td:nth-child(2):hover {
-	background-color: #4D34BB;
 	background-color: #5530A6;
 }
 
@@ -320,10 +318,12 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* ============================= The top strip above everything */
 #mal_control_strip {
+	position: relative!important;
+	left: 1px!important;
 	background-image: none!important;
-	background-color: #005C7A!important;
+	background-color: transparent!important;
 	height: 80px!important;
-	width: 1008px!important;
+	width: auto!important;
 	margin-left: auto!important;
 	margin-right: auto!important;
 	margin-bottom: -12px!important;
@@ -340,12 +340,18 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
 	border: 0!important;
 	border-right: 8px solid white!important;
-	width: 33.333% !important;
+	width: 306px !important;
+	background-color: #005C7A!important;
 }
+
 
 /* Profile/logout section */
 #mal_cs_listinfo {
 	background: url(listinfo_icon.png) no-repeat 260px center;
+}
+
+#mal_cs_pic, #mal_cs_pic + #mal_cs_otherlinks {
+	width: 474px!important;
 }
 
 /* Add to list, Home, Animelist, Mangalist section */
@@ -396,9 +402,69 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* Search bar */
 #mal_cs_powered {
-	display: none!important;
+	/* display: none!important; */
+	position: fixed!important;
+	height: 30px!important;
+	width: 100%!important;
+	top: auto!important;
+	right: auto!important;
+	left: 0px!important;
+	bottom: 6px!important;
+	text-align: left!important;
 }
 
+#searchBox {
+	position: relative;
+	height: 30px;
+	width: 30px!important;
+	font-size: 14px !important;
+	color: transparent;
+	text-align: left;
+	border: 2px solid transparent;
+	outline: none;
+	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center center;
+	
+	/* transition: all 0.4s; */
+	/* -webkit-transition: all 0.4s; */
+}
+
+#mal_control_strip td div#search {
+	color: black!important;
+	padding: 0!important;
+	margin: 0!important;
+}
+
+#searchListButton {
+	display: none;
+}
+
+#searchBox:focus {
+	width: 100%!important;
+	/* height: 50px; */
+	padding-left: 50px;
+	line-height: 30px;
+	font-size: 30px;
+	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px;
+	color: white;
+	
+	animation: searchMove 0.3s;
+	-webkit-animation: searchMove 0.3s; /* Safari and Chrome */
+}
+
+@keyframe searchMove {
+	from {bottom:-50px;}
+	to {bottom: 0px;}
+}
+
+@-webkit-keyframes searchMove /* Safari and Chrome */
+{
+	from {bottom: -50px;}
+	to {bottom: 0px;}
+}
+
+#mal_cs_powered a {
+	display: none!important;
+}
 
 /* The box that pops up when you press Edit */
 #fancybox-wrap {
