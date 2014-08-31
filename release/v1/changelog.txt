@@ -1,4 +1,0 @@
-Version 1.0
-===========
-May 20, 2013
-- initial launch
