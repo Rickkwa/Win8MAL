@@ -53,84 +53,82 @@ a:visited, a:link, a:active {
 
 
 /* The Watching, Completed, etc title that appears above the lists (a div)
-use .header_cw, .header_completed, etc for the table that it is in */
+use .header_cw, .header_completed, etc for the tab\le that it is in */
 .header_title {
 	font-size: 24px;
 }
 
 
 
-
-
 /* All the links that appear in the Anime Title, Score, Type, Progress, etc row */
-table .table_header,
-table .table_header .table_headerLink,
-table .table_header .table_headerLink:link,
-table .table_header .table_headerLink:visited,
-table .table_header .table_headerLink:active {
+tab\le .tab\le_header,
+tab\le .tab\le_header .tab\le_headerLink,
+tab\le .tab\le_header .tab\le_headerLink:link,
+tab\le .tab\le_header .tab\le_headerLink:visited,
+tab\le .tab\le_header .tab\le_headerLink:active {
 	color: white;
 }
 
-table .table_header b {
+tab\le .tab\le_header b {
 	font-weight: normal;
 }
 
 
 /* Background colour for the top tile, the list header, and the MORE */
-.header_cw  + table .table_header,
-#list_surround br:first-child + table tr td:nth-child(1),
+.header_cw  + tab\le .tab\le_header,
+#list_surround br:first-child + tab\le td:nth-child(1),
 .header_cw ~ .hide  {
 	background-color: #0072C6; /* blue */
 }
 
-#list_surround br:first-child + table tr td:nth-child(1):hover {
+#list_surround br:first-child + tab\le td:nth-child(1):hover {
 	background-color: #0061C8;
 }
 
 /* Link colours
 this block make mouseover slow */
 .header_cw *, 
-.header_cw ~ table a:visited, 
-.header_cw ~ table a:link, 
-.header_cw ~ table a:active {
+.header_cw ~ tab\le a:visited, 
+.header_cw ~ tab\le a:link, 
+.header_cw ~ tab\le a:active {
 	color: #0072C6;
 }
 
 
-.header_completed  + table .table_header,
-#list_surround br:first-child + table tr td:nth-child(2),
+.header_completed  + tab\le .tab\le_header,
+#list_surround br:first-child + tab\le td:nth-child(2),
 .header_completed ~ .hide {
 	background-color: #5E34BA;
 }
 
-#list_surround br:first-child + table tr td:nth-child(2):hover {
+#list_surround br:first-child + tab\le td:nth-child(2):hover {
 	background-color: #5530A6;
 }
 
 .header_completed *, 
-.header_completed ~ table a:visited, 
-.header_completed ~ table a:link, 
-.header_completed ~ table a:active {
+.header_completed ~ tab\le a:visited, 
+.header_completed ~ tab\le a:link, 
+.header_completed ~ tab\le a:active {
 	color: #5E34BA;
 }
 
 
 
 
-.header_onhold  + table .table_header,
-#list_surround br:first-child + table tr td:nth-child(3),
+.header_onhold  + tab\le .tab\le_header,
+#list_surround br:first-child + tab\le td:nth-child(3),
 .header_onhold ~ .hide  {
 	background-color: #DF5628;
 }
 
-#list_surround br:first-child + table tr td:nth-child(3):hover {
+#list_surround br:first-child + tab\le td:nth-child(3):hover {
 	background-color: #D15025;
 }
 
 .header_onhold *, 
-.header_onhold ~ table a:visited, 
-.header_onhold ~ table a:link, 
-.header_onhold ~ table a:active {
+.header_onhold ~ tab\le a:visited, 
+.header_onhold ~ tab\le a:link, 
+.header_onhold ~ tab\le a:active {
 	color: #DF5628;
 }
 
@@ -138,47 +136,47 @@ this block make mouseover slow */
 
 
 
-.header_dropped  + table .table_header,
-#list_surround br:first-child + table tr td:nth-child(4),
+.header_dropped  + tab\le .tab\le_header,
+#list_surround br:first-child + tab\le td:nth-child(4),
 .header_dropped ~ .hide  {
 	background-color: #009CAD;
 }
 
-#list_surround br:first-child + table tr td:nth-child(4):hover {
+#list_surround br:first-child + tab\le td:nth-child(4):hover {
 	background-color: #008BAE;
 }
 
 .header_dropped *, 
-.header_dropped ~ table a:visited, 
-.header_dropped ~ table a:link, 
-.header_dropped ~ table a:active {
+.header_dropped ~ tab\le a:visited, 
+.header_dropped ~ tab\le a:link, 
+.header_dropped ~ tab\le a:active {
 	color: #009CAD;
 }
 
 
-.header_ptw  + table .table_header,
-#list_surround br:first-child + table tr td:nth-child(5),
+.header_ptw  + tab\le .tab\le_header,
+#list_surround br:first-child + tab\le td:nth-child(5),
 .header_ptw ~ .hide {
 	background-color: #AB234B;
 }
 
-#list_surround br:first-child + table tr td:nth-child(5):hover {
+#list_surround br:first-child + tab\le td:nth-child(5):hover {
 	background-color: #901C3F;
 }
 
 .header_ptw *, 
-.header_ptw ~ table a:visited, 
-.header_ptw ~ table a:link, 
-.header_ptw ~ table a:active {
+.header_ptw ~ tab\le a:visited, 
+.header_ptw ~ tab\le a:link, 
+.header_ptw ~ tab\le a:active {
 	color: #AB234B;
 }
 
 
-#list_surround br:first-child + table tr td:nth-child(6) {
+#list_surround br:first-child + tab\le td:nth-child(6) {
 	background-color: #079B00;
 }
 
-#list_surround br:first-child + table tr td:nth-child(6):hover {
+#list_surround br:first-child + tab\le td:nth-child(6):hover {
 	background-color: #0A8104;
 }
 
@@ -189,13 +187,13 @@ this block make mouseover slow */
 
 
 /* The cells of the Anime Title, Score, Type, etc */
-.table_header {
+.tab\le_header {
 	/* background-color: #0072C6; */
 	padding: 8px 0;
 }
 
-.table_headerLink, .table_headerLink:visited, .table_headerLink:link, 
-.table_headerLink:active, .table_header strong {
+.tab\le_headerLink, .tab\le_headerLink:visited, .tab\le_headerLink:link, 
+.tab\le_headerLink:active, .tab\le_header strong {
 	text-decoration: none;
 	font-weight: normal;
 }
@@ -219,36 +217,32 @@ this block make mouseover slow */
 
 
 /* The column for Anime Title (and the cell for Anime Title column title) */
-tr .td1:nth-child(2), tr .td2:nth-child(2), .table_header:nth-child(2) {
+.td1:nth-child(2), .td2:nth-child(2), .tab\le_header:nth-child(2) {
 	width: 500px;
 }
 
 
 /* The EDIT, MORE links */
-tr .td1:nth-child(2) small a, tr .td2:nth-child(2) small a {
+.td1:nth-child(2) small a, .td2:nth-child(2) small a {
 	display: inline-block;
 	height: 20px;
 }
 
 
 /* The Edit, More links and the dash (-) in between them */
-/* tr .td1:nth-child(2) small, tr .td2:nth-child(2) small, 
-tr .td1:nth-child(2) small a, tr .td2:nth-child(2) small a {
-	color: transparent;
-} */
-tr .td1 > div > small, tr .td2 > div > small, 
-tr .td1 > div > small a:link, tr .td1 > div > small a:active, tr .td1 > div > small a:visited,
-tr .td2 > div > small a:link, tr .td2 > div > small a:active, tr .td2 > div > small a:visited {
+.td1 > di\v > small, .td2 > di\v > small, 
+.td1 > di\v > small a:link, .td1 > di\v > small a:active, .td1 > di\v > small a:visited,
+.td2 > di\v > small a:link, .td2 > di\v > small a:active, .td2 > di\v > small a:visited {
 	color: transparent;
 }
 
 /* Edit button */
-tr .td1 > div > small a:first-child, tr .td2 > div > small a:first-child {
+.td1 > di\v > small a:first-child, .td2 > di\v > small a:first-child {
 	background: url(http://i.imgur.com/7F6Lo8L.png) no-repeat center center;
 }
 
 /* More button */
-tr .td1 > div > small a:last-child, tr .td2 > div > small a:last-child {
+.td1 > di\v > small a:last-child, .td2 > di\v > small a:last-child {
 	background: url(http://i.imgur.com/DiqN8wh.png) no-repeat center center;
 }
 
@@ -284,7 +278,7 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 	background-color: transparent;
 }
 
-.hide, .borderRBL > div a {
+.hide, .borderRBL > di\v a {
 	color: white;
 }
 
@@ -310,7 +304,7 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 
 /* ============================= The top strip above everything */
-#mal_control_strip {
+#mal\_control\_strip {
 	position: relative!important;
 	left: 1px!important;
 	background-image: none!important;
@@ -325,11 +319,11 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 /* Links on it */
-#mal_control_strip a:link, #mal_control_strip a:visited, #mal_control_strip a:active {
+#mal\_control\_strip a:link, #mal\_control\_strip a:visited, #mal\_control\_strip a:active {
 	text-decoration: none!important;
 }
 
-/* The three sections (table cells) ie: username/logout, add to list/home/anime(manga)list, history, forum, export */
+/* The three sections (tab\le cells) ie: username/logout, add to list/home/anime(manga)list, history, forum, export */
 #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
 	border: 0!important;
 	border-right: 8px solid white!important;
@@ -358,17 +352,17 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 /* The divs in history, forum, export section */
-#mal_cs_otherlinks > div {
+#mal_cs_otherlinks > di\v {
 	width: 243px!important;
 }
 
 /* The bold in the 3rd tile */
-#mal_cs_otherlinks > div strong {
+#mal_cs_otherlinks > di\v strong {
 	font-weight: normal!important;
 }
 
 /* The Home and Manga List link */
-#mal_cs_links div a:nth-child(2) {
+#mal_cs_links di\v a:nth-child(2) {
 	padding-left: 20px!important;
 }
 
@@ -377,18 +371,18 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 /* Your username on the strip */
-#mal_cs_listinfo div:first-child a {
+#mal_cs_listinfo di\v:first-child a {
 	/* font-size: 22px!important; */
 	font-size: 20px!important;
 }
 
 /* The bold on your username */
-#mal_cs_listinfo div:first-child a strong {
+#mal_cs_listinfo di\v:first-child a strong {
 	font-weight: normal!important;
 }
 
 /* All the divs in each of #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic, etc */
-#mal_control_strip td > div {
+#mal\_control\_strip t\d > di\v {
 	padding-left: 5px!important;
 }
 
@@ -421,13 +415,18 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	/* -webkit-transition: all 0.4s; */
 }
 
-#mal_control_strip td div#search {
+#mal\_control\_strip t\d di\v#search {
 	color: black!important;
 	padding: 0!important;
 	margin: 0!important;
 }
 
 #searchListButton {
+	display: none;
+}
+
+/* Temporary until I get the search box the way I like it */
+#searchBox {
 	display: none;
 }
 
