@@ -389,7 +389,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* Search bar */
 #mal_cs_powered {
-	/* display: none!important; */
 	position: fixed!important;
 	height: 30px!important;
 	width: 100%!important;
@@ -401,18 +400,34 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #searchBox {
-	position: relative;
+	width: 100% !important;
 	height: 30px;
-	width: 30px!important;
-	font-size: 14px !important;
-	color: transparent;
-	text-align: left;
-	border: 2px solid transparent;
-	outline: none;
-	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center center;
+	line-height: 30px;
+	text-align: center;
+	font-size: 18px !important;
+	border: 0;
+	padding: 0;
+	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px !important;
+	color: white;
 	
-	/* transition: all 0.4s; */
-	/* -webkit-transition: all 0.4s; */
+	position: relative;
+	bottom: 0;
+}
+
+#search {
+	padding: 0 !important;
+	padding-top: 30px !important;
+	margin: 0 !important;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: -30px;
+	
+	transition: bottom 0.25s 0.2s;
+}
+
+#search:hover {
+	bottom: 0;
 }
 
 #mal\_control\_strip t\d di\v#search {
@@ -425,34 +440,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	display: none;
 }
 
-/* Temporary until I get the search box the way I like it */
-#searchBox {
-	display: none;
-}
-
-#searchBox:focus {
-	width: 100%!important;
-	/* height: 50px; */
-	padding-left: 50px;
-	line-height: 30px;
-	font-size: 30px;
-	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px;
-	color: white;
-	
-	animation: searchMove 0.3s;
-	-webkit-animation: searchMove 0.3s; /* Safari and Chrome */
-}
-
-@keyframe searchMove {
-	from {bottom:-50px;}
-	to {bottom: 0px;}
-}
-
-@-webkit-keyframes searchMove /* Safari and Chrome */
-{
-	from {bottom: -50px;}
-	to {bottom: 0px;}
-}
 
 #mal_cs_powered a {
 	display: none!important;
