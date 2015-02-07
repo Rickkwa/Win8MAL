@@ -1,7 +1,7 @@
 /**
 * Windows 8 Style MyAnimeList
 * Created by Ricky K
-* Version 1.3
+* Version 1.4
 
 Colours:
 # 0072C6 - blue
@@ -230,19 +230,19 @@ this block make mouseover slow */
 
 
 /* The Edit, More links and the dash (-) in between them */
-.td1 > di\v > small, .td2 > di\v > small, 
-.td1 > di\v > small a:link, .td1 > di\v > small a:active, .td1 > di\v > small a:visited,
-.td2 > di\v > small a:link, .td2 > di\v > small a:active, .td2 > di\v > small a:visited {
+.td1 di\v small, .td2 di\v small, 
+.td1 di\v small a:link, .td1 di\v small a:active, .td1 di\v small a:visited,
+.td2 di\v small a:link, .td2 di\v small a:active, .td2 di\v small a:visited {
 	color: transparent;
 }
 
 /* Edit button */
-.td1 > di\v > small a:first-child, .td2 > di\v > small a:first-child {
+.td1 di\v small a:first-child, .td2 di\v small a:first-child {
 	background: url(http://i.imgur.com/7F6Lo8L.png) no-repeat center center;
 }
 
 /* More button */
-.td1 > di\v > small a:last-child, .td2 > di\v > small a:last-child {
+.td1 small a:last-child, .td2 small a:last-child {
 	background: url(http://i.imgur.com/DiqN8wh.png) no-repeat center center;
 }
 
@@ -278,7 +278,7 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 	background-color: transparent;
 }
 
-.hide, .borderRBL > di\v a {
+.hide, .borderRBL di\v a {
 	color: white;
 }
 
@@ -352,12 +352,12 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 /* The divs in history, forum, export section */
-#mal_cs_otherlinks > di\v {
+#mal_cs_otherlinks d\iv {
 	width: 243px!important;
 }
 
 /* The bold in the 3rd tile */
-#mal_cs_otherlinks > di\v strong {
+#mal_cs_otherlinks di\v strong {
 	font-weight: normal!important;
 }
 
@@ -382,9 +382,9 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 /* All the divs in each of #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic, etc */
-#mal\_control\_strip t\d > di\v {
+/*#mal\_control\_strip t\d di\v {
 	padding-left: 5px!important;
-}
+}*/
 
 
 /* Search bar */
