@@ -1,16 +1,7 @@
 /**
-* Windows 8 Style MyAnimeList
+* Windows 8 MyAnimeList Theme
 * Created by Ricky K
-* Version 1.4
-
-Colours:
-# 0072C6 - blue
-# 5E34BA - purple
-# 079B00 - green
-# AB234B - red
-# DF5628 - orange
-# 009CAD - torquoise
-
+* https://github.com/Rickkwa/Win8MAL
 */
 
 body {
@@ -19,11 +10,9 @@ body {
 	color: #424242;
 }
 
-
 a:visited, a:link, a:active {
 	text-decoration: none;
 }
-
 
 #list_surround {
 	width: 1008px;
@@ -51,14 +40,11 @@ a:visited, a:link, a:active {
 	width: 160px;
 }
 
-
 /* The Watching, Completed, etc title that appears above the lists (a div)
 use .header_cw, .header_completed, etc for the tab\le that it is in */
 .header_title {
 	font-size: 24px;
 }
-
-
 
 /* All the links that appear in the Anime Title, Score, Type, Progress, etc row */
 tab\le .tab\le_header,
@@ -72,7 +58,6 @@ tab\le .tab\le_header .tab\le_headerLink:active {
 tab\le .tab\le_header b {
 	font-weight: normal;
 }
-
 
 /* Background colour for the top tile, the list header, and the MORE */
 .header_cw  + tab\le .tab\le_header,
@@ -94,7 +79,6 @@ this block make mouseover slow */
 	color: #0072C6;
 }
 
-
 .header_completed  + tab\le .tab\le_header,
 #list_surround br:first-child + tab\le td:nth-child(2),
 .header_completed ~ .hide {
@@ -111,9 +95,6 @@ this block make mouseover slow */
 .header_completed ~ tab\le a:active {
 	color: #5E34BA;
 }
-
-
-
 
 .header_onhold  + tab\le .tab\le_header,
 #list_surround br:first-child + tab\le td:nth-child(3),
@@ -132,10 +113,6 @@ this block make mouseover slow */
 	color: #DF5628;
 }
 
-
-
-
-
 .header_dropped  + tab\le .tab\le_header,
 #list_surround br:first-child + tab\le td:nth-child(4),
 .header_dropped ~ .hide  {
@@ -152,7 +129,6 @@ this block make mouseover slow */
 .header_dropped ~ tab\le a:active {
 	color: #009CAD;
 }
-
 
 .header_ptw  + tab\le .tab\le_header,
 #list_surround br:first-child + tab\le td:nth-child(5),
@@ -171,7 +147,6 @@ this block make mouseover slow */
 	color: #AB234B;
 }
 
-
 #list_surround br:first-child + tab\le td:nth-child(6) {
 	background-color: #079B00;
 }
@@ -179,12 +154,6 @@ this block make mouseover slow */
 #list_surround br:first-child + tab\le td:nth-child(6):hover {
 	background-color: #0A8104;
 }
-
-
-
-
-
-
 
 /* The cells of the Anime Title, Score, Type, etc */
 .tab\le_header {
@@ -197,7 +166,6 @@ this block make mouseover slow */
 	text-decoration: none;
 	font-weight: normal;
 }
-
 
 /* All the columns on EVEN numbered rows */
 .td2 {
@@ -215,19 +183,16 @@ this block make mouseover slow */
 	padding-top: 5px;
 }
 
-
 /* The column for Anime Title (and the cell for Anime Title column title) */
 .td1:nth-child(2), .td2:nth-child(2), .tab\le_header:nth-child(2) {
 	width: 500px;
 }
-
 
 /* The EDIT, MORE links */
 .td1:nth-child(2) small a, .td2:nth-child(2) small a {
 	display: inline-block;
 	height: 20px;
 }
-
 
 /* The Edit, More links and the dash (-) in between them */
 .td1 di\v small, .td2 di\v small, 
@@ -246,7 +211,6 @@ this block make mouseover slow */
 	background: url(http://i.imgur.com/DiqN8wh.png) no-repeat center center;
 }
 
-
 /* The cell containing all the information about the list at the bottom
 eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 .category_totals {
@@ -254,7 +218,6 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 	border-left: 2px solid transparent;
 	border-bottom: 10px solid transparent;
 }
-
 
 /* The MORE section that appears when you press the MORE link */
 /* The div */
@@ -282,12 +245,10 @@ eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 	color: white;
 }
 
-
 .hide a:visited, .hide a:active, .hide a:link {
 	color: white;
 	text-decoration: underline;
 }
-
 
 /*
 copyright contains the "Producted by Garrett Gyssler" text
@@ -301,7 +262,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	padding: 20px;
 	margin-bottom: 20px;
 }
-
 
 /* ============================= The top strip above everything */
 #mal\_control\_strip {
@@ -330,7 +290,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	width: 306px !important;
 	background-color: #005C7A!important;
 }
-
 
 /* Profile/logout section */
 #mal_cs_listinfo {
@@ -386,7 +345,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	padding-left: 5px!important;
 }*/
 
-
 /* Search bar */
 #mal_cs_powered {
 	position: fixed!important;
@@ -439,7 +397,6 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 #searchListButton {
 	display: none;
 }
-
 
 #mal_cs_powered a {
 	display: none!important;
