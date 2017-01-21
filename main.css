@@ -203,12 +203,12 @@ this block make mouseover slow */
 
 /* Edit button */
 .td1 di\v small a:first-child, .td2 di\v small a:first-child {
-	background: url(http://i.imgur.com/7F6Lo8L.png) no-repeat center center;
+	background: url(https://i.imgur.com/7F6Lo8L.png) no-repeat center center;
 }
 
 /* More button */
 .td1 small a:last-child, .td2 small a:last-child {
-	background: url(http://i.imgur.com/DiqN8wh.png) no-repeat center center;
+	background: url(https://i.imgur.com/DiqN8wh.png) no-repeat center center;
 }
 
 /* The cell containing all the information about the list at the bottom
@@ -293,7 +293,7 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* Profile/logout section */
 #mal_cs_listinfo {
-	background: url(http://i.imgur.com/hw5DN6D.png) no-repeat 260px center;
+	background: url(https://i.imgur.com/hw5DN6D.png) no-repeat 260px center;
 }
 
 #mal_cs_pic, #mal_cs_pic + #mal_cs_otherlinks {
@@ -302,12 +302,12 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 
 /* Add to list, Home, Animelist, Mangalist section */
 #mal_cs_links {
-	background: url(http://i.imgur.com/sWhb5aN.png) no-repeat 260px center;
+	background: url(https://i.imgur.com/sWhb5aN.png) no-repeat 260px center;
 }
 
 /* History, Forum, Export section */
 #mal_cs_otherlinks {
-	background: url(http://i.imgur.com/gQTXnqp.png) no-repeat 260px center;
+	background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 260px center;
 }
 
 /* The divs in history, forum, export section */
@@ -326,7 +326,7 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #mal_cs_pic + #mal_cs_otherlinks {
-	background: url(http://i.imgur.com/gQTXnqp.png) no-repeat 420px center;
+	background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 420px center;
 }
 
 /* Your username on the strip */
@@ -365,7 +365,7 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 	font-size: 18px !important;
 	border: 0;
 	padding: 0;
-	background: #005C7A url('http://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px !important;
+	background: #005C7A url('https://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px !important;
 	color: white;
 	
 	position: relative;
@@ -417,5 +417,5 @@ IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
 }
 
 #fancybox-close {
-	background: url(http://i.imgur.com/QK8xGbQ.png) top left no-repeat!important;
+	background: url(https://i.imgur.com/QK8xGbQ.png) top left no-repeat!important;
 }
