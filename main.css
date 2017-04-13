@@ -3,419 +3,248 @@
 * Created by Ricky K
 * https://github.com/Rickkwa/Win8MAL
 */
-
 body {
-	font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
-	font-size: 15px;
-	color: #424242;
-}
+  font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+  font-size: 15px;
+  color: #424242; }
 
 a:visited, a:link, a:active {
-	text-decoration: none;
-}
+  text-decoration: none; }
 
 #list_surround {
-	width: 1008px;
-	margin-left: auto;
-	margin-right: auto;
-}
+  width: 1008px;
+  margin-left: auto;
+  margin-right: auto; }
+  #list_surround br:first-child + tab\le td:nth-child(1) {
+    background-color: #0072C6; }
+    #list_surround br:first-child + tab\le td:nth-child(1):hover {
+      background-color: #0061C8; }
+  #list_surround br:first-child + tab\le td:nth-child(2) {
+    background-color: #5E34BA; }
+    #list_surround br:first-child + tab\le td:nth-child(2):hover {
+      background-color: #5530A6; }
+  #list_surround br:first-child + tab\le td:nth-child(3) {
+    background-color: #DF5628; }
+    #list_surround br:first-child + tab\le td:nth-child(3):hover {
+      background-color: #D15025; }
+  #list_surround br:first-child + tab\le td:nth-child(4) {
+    background-color: #009CAD; }
+    #list_surround br:first-child + tab\le td:nth-child(4):hover {
+      background-color: #008BAE; }
+  #list_surround br:first-child + tab\le td:nth-child(5) {
+    background-color: #AB234B; }
+    #list_surround br:first-child + tab\le td:nth-child(5):hover {
+      background-color: #901C3F; }
+  #list_surround br:first-child + tab\le td:nth-child(6) {
+    background-color: #079B00; }
+    #list_surround br:first-child + tab\le td:nth-child(6):hover {
+      background-color: #0A8104; }
 
-/* The Currently Watching, Completed, etc buttons on the top to filter */
+.header_cw + tab\le .tab\le_header, .header_cw ~ .hide {
+  background-color: #0072C6; }
+.header_cw *, .header_cw ~ tab\le a:visited, .header_cw ~ tab\le a:link, .header_cw ~ tab\le a:active {
+  color: #0072C6; }
+
+.header_completed + tab\le .tab\le_header, .header_completed ~ .hide {
+  background-color: #5E34BA; }
+.header_completed *, .header_completed ~ tab\le a:visited, .header_completed ~ tab\le a:link, .header_completed ~ tab\le a:active {
+  color: #5E34BA; }
+
+.header_onhold + tab\le .tab\le_header, .header_onhold ~ .hide {
+  background-color: #DF5628; }
+.header_onhold *, .header_onhold ~ tab\le a:visited, .header_onhold ~ tab\le a:link, .header_onhold ~ tab\le a:active {
+  color: #DF5628; }
+
+.header_dropped + tab\le .tab\le_header, .header_dropped ~ .hide {
+  background-color: #009CAD; }
+.header_dropped *, .header_dropped ~ tab\le a:visited, .header_dropped ~ tab\le a:link, .header_dropped ~ tab\le a:active {
+  color: #009CAD; }
+
+.header_ptw + tab\le .tab\le_header, .header_ptw ~ .hide {
+  background-color: #AB234B; }
+.header_ptw *, .header_ptw ~ tab\le a:visited, .header_ptw ~ tab\le a:link, .header_ptw ~ tab\le a:active {
+  color: #AB234B; }
+
 .status_not_selected, .status_selected {
-	background-color: #0072C6;
-	height: 80px;
-	line-height: 80px;
-	border-right: 8px solid white!important;
-}
+  background-color: #0072C6;
+  height: 80px;
+  line-height: 80px;
+  border-right: 8px solid white !important; }
+  .status_not_selected a:visited, .status_not_selected a:link, .status_not_selected a:active, .status_selected a:visited, .status_selected a:link, .status_selected a:active {
+    color: white;
+    display: block; }
+  .status_not_selected, .status_not_selected a:visited, .status_not_selected a:link, .status_not_selected a:active, .status_selected, .status_selected a:visited, .status_selected a:link, .status_selected a:active {
+    width: 160px; }
 
-.status_not_selected a:visited, .status_not_selected a:link,.status_not_selected a:active, 
-.status_selected a:visited, .status_selected a:link, .status_selected a:active {
-	color: white;
-	display: block; /* Makes the entire block clickable rather than just words */
-}
-
-.status_not_selected a:visited, .status_not_selected a:link,.status_not_selected a:active, 
-.status_selected a:visited, .status_selected a:link, .status_selected a:active,
-.status_not_selected, .status_selected {
-	width: 160px;
-}
-
-/* The Watching, Completed, etc title that appears above the lists (a div)
-use .header_cw, .header_completed, etc for the tab\le that it is in */
 .header_title {
-	font-size: 24px;
-}
+  font-size: 24px; }
 
-/* All the links that appear in the Anime Title, Score, Type, Progress, etc row */
-tab\le .tab\le_header,
-tab\le .tab\le_header .tab\le_headerLink,
-tab\le .tab\le_header .tab\le_headerLink:link,
-tab\le .tab\le_header .tab\le_headerLink:visited,
-tab\le .tab\le_header .tab\le_headerLink:active {
-	color: white;
-}
+tab\le .tab\le_header {
+  padding: 8px 0; }
+  tab\le .tab\le_header:nth-child(2) {
+    width: 500px; }
+  tab\le .tab\le_header, tab\le .tab\le_header .tab\le_headerLink, tab\le .tab\le_header .tab\le_headerLink:link, tab\le .tab\le_header .tab\le_headerLink:visited, tab\le .tab\le_header .tab\le_headerLink:active, tab\le .tab\le_header strong {
+    color: white;
+    text-decoration: none;
+    font-weight: normal; }
+  tab\le .tab\le_header b {
+    font-weight: normal; }
 
-tab\le .tab\le_header b {
-	font-weight: normal;
-}
-
-/* Background colour for the top tile, the list header, and the MORE */
-.header_cw  + tab\le .tab\le_header,
-#list_surround br:first-child + tab\le td:nth-child(1),
-.header_cw ~ .hide  {
-	background-color: #0072C6; /* blue */
-}
-
-#list_surround br:first-child + tab\le td:nth-child(1):hover {
-	background-color: #0061C8;
-}
-
-/* Link colours
-this block make mouseover slow */
-.header_cw *, 
-.header_cw ~ tab\le a:visited, 
-.header_cw ~ tab\le a:link, 
-.header_cw ~ tab\le a:active {
-	color: #0072C6;
-}
-
-.header_completed  + tab\le .tab\le_header,
-#list_surround br:first-child + tab\le td:nth-child(2),
-.header_completed ~ .hide {
-	background-color: #5E34BA;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(2):hover {
-	background-color: #5530A6;
-}
-
-.header_completed *, 
-.header_completed ~ tab\le a:visited, 
-.header_completed ~ tab\le a:link, 
-.header_completed ~ tab\le a:active {
-	color: #5E34BA;
-}
-
-.header_onhold  + tab\le .tab\le_header,
-#list_surround br:first-child + tab\le td:nth-child(3),
-.header_onhold ~ .hide  {
-	background-color: #DF5628;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(3):hover {
-	background-color: #D15025;
-}
-
-.header_onhold *, 
-.header_onhold ~ tab\le a:visited, 
-.header_onhold ~ tab\le a:link, 
-.header_onhold ~ tab\le a:active {
-	color: #DF5628;
-}
-
-.header_dropped  + tab\le .tab\le_header,
-#list_surround br:first-child + tab\le td:nth-child(4),
-.header_dropped ~ .hide  {
-	background-color: #009CAD;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(4):hover {
-	background-color: #008BAE;
-}
-
-.header_dropped *, 
-.header_dropped ~ tab\le a:visited, 
-.header_dropped ~ tab\le a:link, 
-.header_dropped ~ tab\le a:active {
-	color: #009CAD;
-}
-
-.header_ptw  + tab\le .tab\le_header,
-#list_surround br:first-child + tab\le td:nth-child(5),
-.header_ptw ~ .hide {
-	background-color: #AB234B;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(5):hover {
-	background-color: #901C3F;
-}
-
-.header_ptw *, 
-.header_ptw ~ tab\le a:visited, 
-.header_ptw ~ tab\le a:link, 
-.header_ptw ~ tab\le a:active {
-	color: #AB234B;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(6) {
-	background-color: #079B00;
-}
-
-#list_surround br:first-child + tab\le td:nth-child(6):hover {
-	background-color: #0A8104;
-}
-
-/* The cells of the Anime Title, Score, Type, etc */
-.tab\le_header {
-	/* background-color: #0072C6; */
-	padding: 8px 0;
-}
-
-.tab\le_headerLink, .tab\le_headerLink:visited, .tab\le_headerLink:link, 
-.tab\le_headerLink:active, .tab\le_header strong {
-	text-decoration: none;
-	font-weight: normal;
-}
-
-/* All the columns on EVEN numbered rows */
-.td2 {
-	background-color: #FAFAFA;
-}
-
-/* All the columns on the ODD numbered rows */ 
-.td1 {
-	/* background-color: white; */
-}
-
-/* All the cells in the lists */
-.td2, .td1 {
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
-
-/* The column for Anime Title (and the cell for Anime Title column title) */
-.td1:nth-child(2), .td2:nth-child(2), .tab\le_header:nth-child(2) {
-	width: 500px;
-}
-
-/* The EDIT, MORE links */
-.td1:nth-child(2) small a, .td2:nth-child(2) small a {
-	display: inline-block;
-	height: 20px;
-}
-
-/* The Edit, More links and the dash (-) in between them */
-.td1 di\v small, .td2 di\v small, 
-.td1 di\v small a:link, .td1 di\v small a:active, .td1 di\v small a:visited,
-.td2 di\v small a:link, .td2 di\v small a:active, .td2 di\v small a:visited {
-	color: transparent;
-}
-
-/* Edit button */
-.td1 di\v small a:first-child, .td2 di\v small a:first-child {
-	background: url(https://i.imgur.com/7F6Lo8L.png) no-repeat center center;
-}
-
-/* More button */
-.td1 small a:last-child, .td2 small a:last-child {
-	background: url(https://i.imgur.com/DiqN8wh.png) no-repeat center center;
-}
-
-/* The cell containing all the information about the list at the bottom
-eg. TV: 16, OVA: 1, Movies: 0, ..., Mean Score: 0 */
 .category_totals {
-	border-top: 10px solid transparent;
-	border-left: 2px solid transparent;
-	border-bottom: 10px solid transparent;
-}
+  border-top: 10px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 10px solid transparent; }
 
-/* The MORE section that appears when you press the MORE link */
-/* The div */
 .hide {
-	margin-left: 50px;
-	padding: 15px;
-	animation: 1s fadeIn;
-	-webkit-animation: 1s fadeIn;
-}
+  margin-left: 50px;
+  padding: 15px;
+  animation: 1s fadeIn;
+  -webkit-animation: 1s fadeIn;
+  color: white; }
+  .hide .borderRBL {
+    background-color: transparent; }
+    .hide .borderRBL di\v a {
+      color: white; }
+  .hide a:visited, .hide a:active, .hide a:link {
+    color: white;
+    text-decoration: underline; }
 
 @keyframes fadeIn {
-	from {opacity: 0.1;}
-	to {opacity: 1;}
-}
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
 @-webkit-keyframes fadeIn {
-	from {opacity: 0.1;}
-	to {opacity: 1;}
-}
+  from {
+    opacity: 0.1; }
+  to {
+    opacity: 1; } }
+.td2 {
+  background-color: #FAFAFA; }
 
-.hide .borderRBL {
-	background-color: transparent;
-}
+.td2, .td1 {
+  padding-bottom: 5px;
+  padding-top: 5px; }
+  .td2:nth-child(2), .td1:nth-child(2) {
+    width: 500px; }
+    .td2:nth-child(2) small a, .td1:nth-child(2) small a {
+      display: inline-block;
+      height: 20px; }
+  .td2 di\v small, .td2 di\v small a:link, .td2 di\v small a:active, .td2 di\v small a:visited, .td1 di\v small, .td1 di\v small a:link, .td1 di\v small a:active, .td1 di\v small a:visited {
+    color: transparent; }
+  .td2 di\v small a:first-child, .td1 di\v small a:first-child {
+    background: url(https://i.imgur.com/7F6Lo8L.png) no-repeat center center; }
+  .td2 di\v small a:last-child, .td1 di\v small a:last-child {
+    background: url(https://i.imgur.com/DiqN8wh.png) no-repeat center center; }
 
-.hide, .borderRBL di\v a {
-	color: white;
-}
-
-.hide a:visited, .hide a:active, .hide a:link {
-	color: white;
-	text-decoration: underline;
-}
-
-/*
-copyright contains the "Producted by Garrett Gyssler" text
-DO NOT REMOVE OR HIDE THIS DIV
-IF FOUND TO BE REMOVED, YOUR LIST WILL BE REMOVED TOO
-*/
 #copyright {
-	text-align: center;
-	margin: 0 auto;
-	background-color: #F2F2F2;
-	padding: 20px;
-	margin-bottom: 20px;
-}
+  text-align: center;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-bottom: 20px; }
 
 /* ============================= The top strip above everything */
 #mal\_control\_strip {
-	position: relative!important;
-	left: 1px!important;
-	background-image: none!important;
-	background-color: transparent!important;
-	height: 80px!important;
-	width: auto!important;
-	margin-left: auto!important;
-	margin-right: auto!important;
-	margin-bottom: -12px!important;
-	margin-top: 10px!important;
-	border: 0!important;
-}
+  position: relative !important;
+  left: 1px !important;
+  background-image: none !important;
+  background-color: transparent !important;
+  height: 80px !important;
+  width: auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: -12px !important;
+  margin-top: 10px !important;
+  border: 0 !important; }
+  #mal\_control\_strip a:link, #mal\_control\_strip a:visited, #mal\_control\_strip a:active {
+    text-decoration: none !important; }
+  #mal\_control\_strip t\d di\v#search {
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important; }
 
-/* Links on it */
-#mal\_control\_strip a:link, #mal\_control\_strip a:visited, #mal\_control\_strip a:active {
-	text-decoration: none!important;
-}
-
-/* The three sections (tab\le cells) ie: username/logout, add to list/home/anime(manga)list, history, forum, export */
 #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
-	border: 0!important;
-	border-right: 8px solid white!important;
-	width: 306px !important;
-	background-color: #005C7A!important;
-}
+  border: 0 !important;
+  border-right: 8px solid white !important;
+  width: 306px !important;
+  background-color: #005C7A !important; }
 
-/* Profile/logout section */
 #mal_cs_listinfo {
-	background: url(https://i.imgur.com/hw5DN6D.png) no-repeat 260px center;
-}
+  background: url(https://i.imgur.com/hw5DN6D.png) no-repeat 260px center; }
+  #mal_cs_listinfo di\v:first-child a {
+    font-size: 20px !important; }
+    #mal_cs_listinfo di\v:first-child a strong {
+      font-weight: normal !important; }
 
 #mal_cs_pic, #mal_cs_pic + #mal_cs_otherlinks {
-	width: 474px!important;
-}
-
-/* Add to list, Home, Animelist, Mangalist section */
-#mal_cs_links {
-	background: url(https://i.imgur.com/sWhb5aN.png) no-repeat 260px center;
-}
-
-/* History, Forum, Export section */
-#mal_cs_otherlinks {
-	background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 260px center;
-}
-
-/* The divs in history, forum, export section */
-#mal_cs_otherlinks d\iv {
-	width: 243px!important;
-}
-
-/* The bold in the 3rd tile */
-#mal_cs_otherlinks di\v strong {
-	font-weight: normal!important;
-}
-
-/* The Home and Manga List link */
-#mal_cs_links di\v a:nth-child(2) {
-	padding-left: 20px!important;
-}
-
+  width: 474px !important; }
 #mal_cs_pic + #mal_cs_otherlinks {
-	background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 420px center;
-}
+  background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 420px center; }
 
-/* Your username on the strip */
-#mal_cs_listinfo di\v:first-child a {
-	/* font-size: 22px!important; */
-	font-size: 20px!important;
-}
+#mal_cs_links {
+  background: url(https://i.imgur.com/sWhb5aN.png) no-repeat 260px center; }
+  #mal_cs_links di\v a:nth-child(2) {
+    padding-left: 20px !important; }
 
-/* The bold on your username */
-#mal_cs_listinfo di\v:first-child a strong {
-	font-weight: normal!important;
-}
+#mal_cs_otherlinks {
+  background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 260px center; }
+  #mal_cs_otherlinks d\iv {
+    width: 243px !important; }
+    #mal_cs_otherlinks d\iv strong {
+      font-weight: normal !important; }
 
-/* All the divs in each of #mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic, etc */
-/*#mal\_control\_strip t\d di\v {
-	padding-left: 5px!important;
-}*/
-
-/* Search bar */
 #mal_cs_powered {
-	position: fixed!important;
-	height: 30px!important;
-	width: 100%!important;
-	top: auto!important;
-	right: auto!important;
-	left: 0px!important;
-	bottom: 6px!important;
-	text-align: left!important;
-}
+  position: fixed !important;
+  height: 30px !important;
+  width: 100% !important;
+  top: auto !important;
+  right: auto !important;
+  left: 0px !important;
+  bottom: 6px !important;
+  text-align: left !important; }
+  #mal_cs_powered a {
+    display: none !important; }
 
 #searchBox {
-	width: 100% !important;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	font-size: 18px !important;
-	border: 0;
-	padding: 0;
-	background: #005C7A url('https://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px !important;
-	color: white;
-	
-	position: relative;
-	bottom: 0;
-}
+  width: 100% !important;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 18px !important;
+  border: 0;
+  padding: 0;
+  background: #005C7A url("https://cdn.myanimelist.net/images/magnify.gif") no-repeat center left 7px !important;
+  color: white;
+  position: relative;
+  bottom: 0; }
 
 #search {
-	padding: 0 !important;
-	padding-top: 30px !important;
-	margin: 0 !important;
-	width: 100%;
-	position: fixed;
-	left: 0;
-	bottom: -30px;
-	
-	transition: bottom 0.25s 0.2s;
-}
-
-#search:hover {
-	bottom: 0;
-}
-
-#mal\_control\_strip t\d di\v#search {
-	color: black!important;
-	padding: 0!important;
-	margin: 0!important;
-}
+  padding: 0 !important;
+  padding-top: 30px !important;
+  margin: 0 !important;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: -30px;
+  transition: bottom 0.25s 0.2s; }
+  #search:hover {
+    bottom: 0; }
 
 #searchListButton {
-	display: none;
-}
+  display: none; }
 
-#mal_cs_powered a {
-	display: none!important;
-}
-
-/* The box that pops up when you press Edit */
 #fancybox-wrap {
-	background-color: #0072C6!important;
-}
+  background-color: #0072C6 !important; }
 
-#fancybox-wrap, #fancybox-outer{
-	animation: 0.5s fadeIn;
-	-webkit-animation: 0.5s fadeIn;
-}
+#fancybox-wrap, #fancybox-outer {
+  animation: 0.5s fadeIn;
+  -webkit-animation: 0.5s fadeIn; }
 
 .fancy-bg {
-	background: none!important;
-}
+  background: none !important; }
 
 #fancybox-close {
-	background: url(https://i.imgur.com/QK8xGbQ.png) top left no-repeat!important;
-}
+  background: url(https://i.imgur.com/QK8xGbQ.png) top left no-repeat !important; }
+
+/*# sourceMappingURL=main.css.map */

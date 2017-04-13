@@ -1,0 +1,300 @@
+/**
+* Windows 8 MyAnimeList Theme
+* Created by Ricky K
+* https://github.com/Rickkwa/Win8MAL
+*/
+
+$colCW: #0072C6;
+$colCompleted: #5E34BA;
+$colOH: #DF5628;
+$colDropped: #009CAD;
+$colPTW: #AB234B;
+$colAll: #079B00;
+
+$colCWAlt: #0061C8;
+$colCompletedAlt: #5530A6;
+$colOHAlt: #D15025;
+$colDroppedAlt: #008BAE;
+$colPTWAlt: #901C3F;
+$colAllAlt: #0A8104;
+
+$fontColor: #424242;
+$width: 1008px;
+
+body {
+    font-family: "Segoe UI Web Semibold", "Segoe UI Web Regular", "Segoe UI", "Segoe UI Symbol", "Helvetica Neue", Arial;
+    font-size: 15px;
+    color: $fontColor;
+}
+
+a {
+    &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+}
+
+#list_surround {
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+
+    @each $index, $color, $colorHover in (1, $colCW, $colCWAlt), (2, $colCompleted, $colCompletedAlt), 
+                                         (3, $colOH, $colOHAlt), (4, $colDropped, $colDroppedAlt), 
+                                         (5, $colPTW, $colPTWAlt), (6, $colAll, $colAllAlt) {
+        br:first-child + tab\le td:nth-child(#{$index}) {
+            background-color: $color;
+            &:hover {
+                background-color: $colorHover;
+            }
+        }
+    }
+}
+
+@each $headerType, $color in ('header_cw', $colCW), ('header_completed', $colCompleted), 
+                             ('header_onhold', $colOH), ('header_dropped', $colDropped), ('header_ptw', $colPTW) {
+    .#{$headerType} {
+        & + tab\le .tab\le_header, & ~ .hide { background-color: $color; }
+        & *, & ~ tab\le a:visited, & ~ tab\le a:link, & ~ tab\le a:active { color: $color; }
+    }
+}
+
+
+.status_not_selected, .status_selected {
+    background-color: $colCW;
+    height: 80px;
+    line-height: 80px;
+    border-right: 8px solid white!important;
+
+    a:visited, a:link, a:active {
+        color: white;
+        display: block;
+    }
+
+    &, a:visited, a:link, a:active {
+        width: 160px;
+    }
+}
+
+.header_title {
+    font-size: 24px;
+}
+
+tab\le {
+    .tab\le_header {
+        padding: 8px 0;
+
+        &:nth-child(2) { width: 500px; }
+
+        &, .tab\le_headerLink, .tab\le_headerLink:link, .tab\le_headerLink:visited, .tab\le_headerLink:active, strong {
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        b { font-weight: normal; }
+    }
+}
+
+.category_totals {
+    border-top: 10px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.hide {
+    margin-left: 50px;
+    padding: 15px;
+    animation: 1s fadeIn;
+    -webkit-animation: 1s fadeIn;
+    color: white;
+
+    .borderRBL {
+        background-color: transparent;
+
+        di\v a { color: white; }
+    }
+
+    a:visited, a:active, a:link {
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0.1;}
+    to {opacity: 1;}
+}
+
+.td2 {
+    background-color: #FAFAFA;
+}
+
+.td1 {
+    
+}
+
+.td2, .td1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    &:nth-child(2) {
+        width: 500px;
+        small a {
+            display: inline-block;
+            height: 20px;
+        }
+    }
+
+    di\v small {
+        &, a:link, a:active, a:visited {
+            color: transparent;
+        }
+
+        a:first-child {
+            background: url(https://i.imgur.com/7F6Lo8L.png) no-repeat center center;
+        }
+
+        a:last-child {
+            background: url(https://i.imgur.com/DiqN8wh.png) no-repeat center center;
+        }
+    }
+}
+
+#copyright {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* ============================= The top strip above everything */
+#mal\_control\_strip {
+    position: relative!important;
+    left: 1px!important;
+    background-image: none!important;
+    background-color: transparent!important;
+    height: 80px!important;
+    width: auto!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    margin-bottom: -12px!important;
+    margin-top: 10px!important;
+    border: 0!important;
+
+    a:link, a:visited, a:active {
+        text-decoration: none!important;
+    }
+
+    t\d di\v#search {
+        color: black!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+}
+
+#mal_cs_listinfo, #mal_cs_links, #mal_cs_otherlinks, #mal_cs_pic {
+    border: 0!important;
+    border-right: 8px solid white!important;
+    width: 306px !important;
+    background-color: #005C7A!important;
+}
+
+#mal_cs_listinfo {
+    background: url(https://i.imgur.com/hw5DN6D.png) no-repeat 260px center;
+    di\v:first-child a {
+        font-size: 20px!important;
+        strong {
+            font-weight: normal!important;
+        }
+    }
+}
+
+#mal_cs_pic {
+    &, & + #mal_cs_otherlinks { width: 474px!important; }
+    & + #mal_cs_otherlinks { background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 420px center; }
+}
+
+#mal_cs_links {
+    background: url(https://i.imgur.com/sWhb5aN.png) no-repeat 260px center;
+    di\v a:nth-child(2) {
+        padding-left: 20px!important;
+    }
+}
+
+#mal_cs_otherlinks {
+    background: url(https://i.imgur.com/gQTXnqp.png) no-repeat 260px center;
+    d\iv {
+        width: 243px!important;
+        strong {
+            font-weight: normal!important;
+        }
+    }
+}
+
+#mal_cs_powered {
+    position: fixed!important;
+    height: 30px!important;
+    width: 100%!important;
+    top: auto!important;
+    right: auto!important;
+    left: 0px!important;
+    bottom: 6px!important;
+    text-align: left!important;
+
+    a { display: none!important; }
+}
+
+#searchBox {
+    width: 100% !important;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px !important;
+    border: 0;
+    padding: 0;
+    background: #005C7A url('https://cdn.myanimelist.net/images/magnify.gif') no-repeat center left 7px !important;
+    color: white;
+    
+    position: relative;
+    bottom: 0;
+}
+
+#search {
+    padding: 0 !important;
+    padding-top: 30px !important;
+    margin: 0 !important;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: -30px;
+    
+    transition: bottom 0.25s 0.2s;
+    &:hover { bottom: 0; }
+}
+
+#searchListButton {
+    display: none;
+}
+
+#fancybox-wrap {
+    background-color: #0072C6!important;
+}
+
+#fancybox-wrap, #fancybox-outer {
+    animation: 0.5s fadeIn;
+    -webkit-animation: 0.5s fadeIn;
+}
+
+.fancy-bg {
+    background: none!important;
+}
+
+#fancybox-close {
+    background: url(https://i.imgur.com/QK8xGbQ.png) top left no-repeat!important;
+}
+
